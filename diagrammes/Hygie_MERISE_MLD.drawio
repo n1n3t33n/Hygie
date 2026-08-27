@@ -1,0 +1,330 @@
+<mxGraphModel dx="3113" dy="2413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1300" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="t_zone" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="73" width="230" x="-60" y="-60" as="geometry" />
+    </mxCell>
+    <mxCell id="t_zone_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ZONE" vertex="1">
+      <mxGeometry height="22" width="230" x="-60" y="-60" as="geometry" />
+    </mxCell>
+    <mxCell id="t_zone_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_zone (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="-38" as="geometry" />
+    </mxCell>
+    <mxCell id="t_zone_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="nom_zone" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="-23" as="geometry" />
+    </mxCell>
+    <mxCell id="t_zone_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="type_zone" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="-8" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="148" width="230" x="-60" y="60" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="CLIENT" vertex="1">
+      <mxGeometry height="22" width="230" x="-60" y="60" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_client (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="82" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="nom" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="97" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="prénom" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="112" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="téléphone" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="127" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_inscription" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="142" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut_compte" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="157" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row6" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="point_eau_disponible" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="172" as="geometry" />
+    </mxCell>
+    <mxCell id="t_client_row7" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_zone (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="187" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="118" width="230" x="280" y="60" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="VEHICULE" vertex="1">
+      <mxGeometry height="22" width="230" x="280" y="60" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_vehicule (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="82" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="type_vehicule" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="97" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="marque" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="112" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="modele" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="127" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="immatriculation" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="142" as="geometry" />
+    </mxCell>
+    <mxCell id="t_vehicule_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_client (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="157" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="118" width="230" x="-60" y="380" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ABONNEMENT" vertex="1">
+      <mxGeometry height="22" width="230" x="-60" y="380" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_abonnement (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="402" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_debut" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="417" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="frequence" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="432" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="montant_hebdo" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="447" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut_abonnement" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="462" as="geometry" />
+    </mxCell>
+    <mxCell id="t_abonnement_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_client (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="477" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="148" width="230" x="280" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="RESERVATION" vertex="1">
+      <mxGeometry height="22" width="230" x="280" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_reservation (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="322" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_reservation" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="337" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="creneau_debut" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="352" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="creneau_fin" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="367" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut_reservation" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="382" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="type_formule" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="397" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row6" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_vehicule (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="412" as="geometry" />
+    </mxCell>
+    <mxCell id="t_reservation_row7" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_abonnement (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="427" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="118" width="230" x="620" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="PAIEMENT" vertex="1">
+      <mxGeometry height="22" width="230" x="620" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_paiement (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="322" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="montant" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="337" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_paiement" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="352" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="mode_paiement" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="367" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut_paiement" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="382" as="geometry" />
+    </mxCell>
+    <mxCell id="t_paiement_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_reservation (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="397" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="133" width="230" x="-60" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="AGENT" vertex="1">
+      <mxGeometry height="22" width="230" x="-60" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_agent (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="722" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="nom" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="737" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="prénom" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="752" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="téléphone" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="767" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="role" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="782" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_embauche" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="797" as="geometry" />
+    </mxCell>
+    <mxCell id="t_agent_row6" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut" vertex="1">
+      <mxGeometry height="15" width="230" x="-60" y="812" as="geometry" />
+    </mxCell>
+    <mxCell id="t_tournee" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="103" width="230" x="280" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="t_tournee_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="TOURNEE" vertex="1">
+      <mxGeometry height="22" width="230" x="280" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="t_tournee_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_tournee (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="722" as="geometry" />
+    </mxCell>
+    <mxCell id="t_tournee_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_tournee" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="737" as="geometry" />
+    </mxCell>
+    <mxCell id="t_tournee_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="zone_couverte" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="752" as="geometry" />
+    </mxCell>
+    <mxCell id="t_tournee_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut_tournee" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="767" as="geometry" />
+    </mxCell>
+    <mxCell id="t_tournee_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_agent (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="782" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="163" width="230" x="620" y="620" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="MISSION" vertex="1">
+      <mxGeometry height="22" width="230" x="620" y="620" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_mission (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="642" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_mission" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="657" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="heure_debut_reelle" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="672" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="heure_fin_reelle" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="687" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut_mission" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="702" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="photo_avant" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="717" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row6" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="photo_apres" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="732" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row7" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_reservation (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="747" as="geometry" />
+    </mxCell>
+    <mxCell id="t_mission_row8" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_tournee (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="620" y="762" as="geometry" />
+    </mxCell>
+    <mxCell id="t_realise" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="58" width="230" x="280" y="900" as="geometry" />
+    </mxCell>
+    <mxCell id="t_realise_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="REALISE (jonction)" vertex="1">
+      <mxGeometry height="22" width="230" x="280" y="900" as="geometry" />
+    </mxCell>
+    <mxCell id="t_realise_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_agent (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="922" as="geometry" />
+    </mxCell>
+    <mxCell id="t_realise_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_mission (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="280" y="937" as="geometry" />
+    </mxCell>
+    <mxCell id="t_avis" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="103" width="230" x="900" y="620" as="geometry" />
+    </mxCell>
+    <mxCell id="t_avis_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="AVIS" vertex="1">
+      <mxGeometry height="22" width="230" x="900" y="620" as="geometry" />
+    </mxCell>
+    <mxCell id="t_avis_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_avis (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="642" as="geometry" />
+    </mxCell>
+    <mxCell id="t_avis_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="note" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="657" as="geometry" />
+    </mxCell>
+    <mxCell id="t_avis_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="commentaire" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="672" as="geometry" />
+    </mxCell>
+    <mxCell id="t_avis_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_avis" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="687" as="geometry" />
+    </mxCell>
+    <mxCell id="t_avis_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_mission (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="702" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#333333;fontSize=10.5;" value="" vertex="1">
+      <mxGeometry height="118" width="230" x="900" y="850" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement_hdr" parent="1" style="text;html=1;fontStyle=1;fontSize=11;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="SIGNALEMENT" vertex="1">
+      <mxGeometry height="22" width="230" x="900" y="850" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement_row0" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="🔑 id_signalement (PK)" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="872" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement_row1" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="type_signalement" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="887" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement_row2" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="description" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="902" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement_row3" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="date_signalement" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="917" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement_row4" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="statut_traitement" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="932" as="geometry" />
+    </mxCell>
+    <mxCell id="t_signalement_row5" parent="1" style="text;html=1;fontSize=9.5;align=left;spacingLeft=6;" value="#id_mission (FK)" vertex="1">
+      <mxGeometry height="15" width="230" x="900" y="947" as="geometry" />
+    </mxCell>
+    <mxCell id="fk1" edge="1" parent="1" source="t_client" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_zone">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk2" edge="1" parent="1" source="t_vehicule" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_client">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk3" edge="1" parent="1" source="t_abonnement" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_client">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk4" edge="1" parent="1" source="t_reservation" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_vehicule">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk5" edge="1" parent="1" source="t_reservation" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_abonnement">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk6" edge="1" parent="1" source="t_paiement" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_reservation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk7" edge="1" parent="1" source="t_tournee" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_agent">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk8" edge="1" parent="1" source="t_mission" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_reservation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk9" edge="1" parent="1" source="t_mission" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_tournee">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk10" edge="1" parent="1" source="t_realise" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_agent">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk11" edge="1" parent="1" source="t_realise" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_mission">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk12" edge="1" parent="1" source="t_avis" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_mission">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fk13" edge="1" parent="1" source="t_signalement" style="endArrow=open;endFill=0;html=1;strokeColor=#6c8ebf;rounded=1;" target="t_mission">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

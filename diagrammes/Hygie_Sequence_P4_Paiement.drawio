@@ -1,0 +1,130 @@
+<mxGraphModel dx="1285" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1080" pageHeight="930" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="client" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Client&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="40" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="systeme" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«contrôle»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;: Système&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="300" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="obj_reservation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Reservation&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="560" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="obj_paiement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Paiement&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="820" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="msg_1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1: payer(reservationId, montantAcompte, modePaiement)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="120" y="130" as="sourcePoint" />
+        <mxPoint x="380" y="130" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_2" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="2: vérifier modePaiement ∈ {wave, orange_money, mtn_money} (RG10)">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="450" y="180" />
+          <mxPoint x="450" y="204" />
+        </Array>
+        <mxPoint x="380" y="180" as="sourcePoint" />
+        <mxPoint x="380" y="204" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="frame_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=#666666;dashed=1;fontSize=10;spacingLeft=6;spacingTop=4;" value="alt" vertex="1">
+      <mxGeometry height="245" width="1040" x="20" y="230" as="geometry" />
+    </mxCell>
+    <mxCell id="guard_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[mode de paiement valide (RG10)]" vertex="1">
+      <mxGeometry height="16" width="1000" x="50" y="246" as="geometry" />
+    </mxCell>
+    <mxCell id="div_5" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#666666;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="20" y="410" as="sourcePoint" />
+        <mxPoint x="1060" y="410" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="guard_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[mode de paiement non supporté (RG10)]" vertex="1">
+      <mxGeometry height="16" width="1020" x="30" y="414" as="geometry" />
+    </mxCell>
+    <mxCell id="msg_7" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="3: create(montant=acompte, modePaiement, reservationId)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="260" as="sourcePoint" />
+        <mxPoint x="900" y="260" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_8" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="4: idPaiement">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" y="300" as="sourcePoint" />
+        <mxPoint x="380" y="300" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_9" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="5: statut = confirmee">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="340" as="sourcePoint" />
+        <mxPoint x="640" y="340" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_10" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="6: acompte reçu, réservation confirmée">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="380" as="sourcePoint" />
+        <mxPoint x="120" y="380" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_11" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="7: rejet (mode de paiement non supporté)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="440" as="sourcePoint" />
+        <mxPoint x="120" y="440" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_12" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="8: payer(reservationId, montantSolde, modePaiement)  — après mission terminée">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="120" y="550" as="sourcePoint" />
+        <mxPoint x="380" y="550" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_13" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="9: create(montant=solde, modePaiement, reservationId)  — 2e paiement">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="600" as="sourcePoint" />
+        <mxPoint x="900" y="600" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_14" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="10: idPaiement">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" y="650" as="sourcePoint" />
+        <mxPoint x="380" y="650" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_15" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="11: solde réglé">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="700" as="sourcePoint" />
+        <mxPoint x="120" y="700" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="note_16" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=11;fillColor=#f5f5f5;strokeColor=#666666;size=16;" value="Multiplicité Reservation &quot;1&quot; — &quot;0..*&quot; Paiement (décision v2) : illustrée ici par les deux instances de Paiement (acompte + solde) pour une même réservation." vertex="1">
+      <mxGeometry height="80" width="560" x="40" y="770" as="geometry" />
+    </mxCell>
+    <mxCell id="lifeline_client" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="120" y="90" as="sourcePoint" />
+        <mxPoint x="120" y="870" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_systeme" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="90" as="sourcePoint" />
+        <mxPoint x="380" y="870" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_obj_reservation" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="640" y="90" as="sourcePoint" />
+        <mxPoint x="640" y="870" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_obj_paiement" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" y="90" as="sourcePoint" />
+        <mxPoint x="900" y="870" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>

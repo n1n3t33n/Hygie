@@ -1,0 +1,216 @@
+<mxGraphModel dx="4784" dy="3504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1500" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="cls_zone" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Zone&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idZone : BigInt {PK}&lt;br&gt;- nom : String&lt;br&gt;- typeZone : String {compound_ferme, quartier_ouvert}" vertex="1">
+      <mxGeometry height="103" width="220" x="480" y="-330" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_client" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Client&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idClient : BigInt {PK}&lt;br&gt;- nom : String&lt;br&gt;- prenom : String&lt;br&gt;- telephone : String&lt;br&gt;- pointEauDisponible : Boolean&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;+ reserverLavage()&lt;br&gt;+ sAbonner()&lt;br&gt;+ ajouterVehicule()&lt;br&gt;+ annulerReservation()&lt;br&gt;+ noterPrestation()&lt;br&gt;+ signalerProbleme()&lt;br&gt;+ consulterHistorique()" vertex="1">
+      <mxGeometry height="266" width="260" x="460" y="-107" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_vehicule" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Vehicule&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idVehicule : BigInt {PK}&lt;br&gt;- immatriculation : String&lt;br&gt;- typeVehicule : String {citadine, berline, suv_4x4, utilitaire}" vertex="1">
+      <mxGeometry height="103" width="220" x="270" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_abonnement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Abonnement&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idAbonnement : BigInt {PK}&lt;br&gt;- frequence : String {hebdomadaire, bimensuelle, mensuelle}&lt;br&gt;- dateDebut : Date&lt;br&gt;- dateFin : Date" vertex="1">
+      <mxGeometry height="120" width="240" x="-310" y="-34" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_reservation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Reservation&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idReservation : BigInt {PK}&lt;br&gt;- dateReservation : Date&lt;br&gt;- creneau : String {matin=4h-6h30, soir=20h-00h} (RG3)&lt;br&gt;- statut : StatutReservation «enum»&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;+ choisirCreneau()&lt;br&gt;+ annuler()  {RG4 : jusqu&#39;à la veille}" vertex="1">
+      <mxGeometry height="164" width="240" x="-310" y="330" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_paiement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Paiement&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idPaiement : BigInt {PK}&lt;br&gt;- montant : Numeric(10,2)&lt;br&gt;- modePaiement : ModePaiement «enum»&lt;br&gt;- datePaiement : TimestampTZ&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;+ payer()" vertex="1">
+      <mxGeometry height="147" width="240" x="-10" y="546" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_statutresa" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;text-align:center;font-style:italic;font-size:11px;&quot;&gt;«enumeration»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;StatutReservation&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;en_attente&lt;br&gt;confirmee&lt;br&gt;annulee&lt;br&gt;terminee" vertex="1">
+      <mxGeometry height="136" width="220" x="-300" y="620" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_modepaiement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;text-align:center;font-style:italic;font-size:11px;&quot;&gt;«enumeration»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;ModePaiement&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;wave&lt;br&gt;orange_money&lt;br&gt;mtn_money" vertex="1">
+      <mxGeometry height="119" width="220" x="340" y="560" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_tournee" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Tournee&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idTournee : BigInt {PK}&lt;br&gt;- dateTournee : Date" vertex="1">
+      <mxGeometry height="86" width="220" x="320" y="1170" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_agent" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Agent&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idAgent : BigInt {PK}&lt;br&gt;- role : Role «enum»&lt;br&gt;- nom : String&lt;br&gt;- telephone : String&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;+ consulterPlanning()&lt;br&gt;+ demarrerMission()&lt;br&gt;+ terminerMission()&lt;br&gt;+ signalerAnomalie()&lt;br&gt;+ creerTournee()  {role=chef_equipe}&lt;br&gt;+ affecterAgent()  {role=chef_equipe}&lt;br&gt;+ controlerQualite()  {role=chef_equipe}&lt;br&gt;+ suivreRevenus()  {role=chef_equipe}" vertex="1">
+      <mxGeometry height="266" width="260" x="300" y="780" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_role" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;text-align:center;font-style:italic;font-size:11px;&quot;&gt;«enumeration»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Role&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;agent_laveur&lt;br&gt;chef_equipe" vertex="1">
+      <mxGeometry height="102" width="200" x="-290" y="862" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_mission" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Mission&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idMission : BigInt {PK}&lt;br&gt;- demarreeLe : TimestampTZ (null tant que non démarrée)&lt;br&gt;- termineeLe : TimestampTZ (null tant que non terminée)&lt;br&gt;- photoAvant : String (RG2, obligatoire)&lt;br&gt;- photoApres : String (RG2, obligatoire)&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;+ demarrer()&lt;br&gt;+ terminer()  {precondition: demarreeLe ≠ null}" vertex="1">
+      <mxGeometry height="181" width="260" x="860" y="610" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_avis" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Avis&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idAvis : BigInt {PK}&lt;br&gt;- note : Integer {1..5}&lt;br&gt;- commentaire : String&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;+ deposer()  {precondition: mission.termineeLe ≠ null}" vertex="1">
+      <mxGeometry height="130" width="240" x="870" y="1330" as="geometry" />
+    </mxCell>
+    <mxCell id="cls_signalement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;spacingRight=6;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;Signalement&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;- idSignalement : BigInt {PK}&lt;br&gt;- typeSignalement : String {client, agent}&lt;br&gt;- description : String&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;+ signaler()" vertex="1">
+      <mxGeometry height="130" width="260" x="1400" y="635.5" as="geometry" />
+    </mxCell>
+    <mxCell id="note_legend" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=11;fillColor=#f5f5f5;strokeColor=#666666;size=16;" value="&lt;b&gt;Légende -&amp;nbsp;&lt;/b&gt;&lt;div&gt;Toutes les valeurs sont finalisées : plus de marqueurs de proposition ou d&#39;hypothèse.&lt;br&gt;&quot;-&quot; = visibilité privée, &quot;+&quot; = publique.&lt;br&gt;&lt;br&gt;&lt;b&gt;Méthodes&lt;/b&gt; : proposées, dérivées des 24 cas d&#39;utilisation (07 UML) et des 7 processus P1-P7 (MCT).&lt;br&gt;&lt;br&gt;&lt;b&gt;Choix de modélisation&lt;/b&gt; : Agent et Signalement restent des classes uniques (attributs role / typeSignalement), fidèles au MCD v3 déjà validé.&lt;br&gt;&lt;br&gt;&lt;b&gt;Hors modèle&lt;/b&gt; : Administrateur et Futur partenaire (acteurs UML) n&#39;apparaissent pas comme entités MCD.&lt;br&gt;&lt;br&gt;&lt;b&gt;Décisions métier :&lt;/b&gt; (typeZone, frequence, typeVehicule, statutReservation, échelle de note, typeSignalement, multiplicité Reservation-Paiement) : justifiées dans le message d&#39;accompagnement, non issues de RG1-RG10 explicites - à confirmer avant documentation Notion.&lt;/div&gt;" vertex="1">
+      <mxGeometry height="440" width="360" x="1210" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_zone_client" edge="1" parent="1" source="cls_zone" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_client" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_zone_client_lblA" connectable="0" parent="assoc_zone_client" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_zone_client_lblB" connectable="0" parent="assoc_zone_client" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_client_vehicule" edge="1" parent="1" source="cls_client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_vehicule" value="POSSEDE">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_client_vehicule_lblA" connectable="0" parent="assoc_client_vehicule" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_client_vehicule_lblB" connectable="0" parent="assoc_client_vehicule" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_client_abo" edge="1" parent="1" source="cls_client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_abonnement" value="SOUSCRIT">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_client_abo_lblA" connectable="0" parent="assoc_client_abo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_client_abo_lblB" connectable="0" parent="assoc_client_abo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_abo_reservation" edge="1" parent="1" source="cls_abonnement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_reservation" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_abo_reservation_lblA" connectable="0" parent="assoc_abo_reservation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_abo_reservation_lblB" connectable="0" parent="assoc_abo_reservation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_vehicule_resa" edge="1" parent="1" source="cls_vehicule" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_reservation" value="CONCERNE">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_vehicule_resa_lblA" connectable="0" parent="assoc_vehicule_resa" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_vehicule_resa_lblB" connectable="0" parent="assoc_vehicule_resa" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_resa_paiement" edge="1" parent="1" source="cls_reservation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_paiement" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_resa_paiement_lblA" connectable="0" parent="assoc_resa_paiement" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_resa_paiement_lblB" connectable="0" parent="assoc_resa_paiement" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_resa_mission" edge="1" parent="1" source="cls_reservation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_mission" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_resa_mission_lblA" connectable="0" parent="assoc_resa_mission" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_resa_mission_lblB" connectable="0" parent="assoc_resa_mission" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_tournee_mission" edge="1" parent="1" source="cls_tournee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_mission" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_tournee_mission_lblA" connectable="0" parent="assoc_tournee_mission" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_tournee_mission_lblB" connectable="0" parent="assoc_tournee_mission" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_agent_tournee" edge="1" parent="1" source="cls_agent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_tournee" value="(créateur)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_agent_tournee_lblA" connectable="0" parent="assoc_agent_tournee" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_agent_tournee_lblB" connectable="0" parent="assoc_agent_tournee" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_agent_mission" edge="1" parent="1" source="cls_agent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_mission" value="REALISE">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_agent_mission_lblA" connectable="0" parent="assoc_agent_mission" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1..*" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_agent_mission_lblB" connectable="0" parent="assoc_agent_mission" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_mission_avis" edge="1" parent="1" source="cls_mission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_avis" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_mission_avis_lblA" connectable="0" parent="assoc_mission_avis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_mission_avis_lblB" connectable="0" parent="assoc_mission_avis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_mission_signal" edge="1" parent="1" source="cls_mission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;jettySize=auto;orthogonalLoop=1;fontSize=10;" target="cls_signalement" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="assoc_mission_signal_lblA" connectable="0" parent="assoc_mission_signal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="assoc_mission_signal_lblB" connectable="0" parent="assoc_mission_signal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+      <mxGeometry relative="1" x="0.82" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="dep_agent_role" edge="1" parent="1" source="cls_agent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;startArrow=none;dashed=1;fontSize=10;" target="cls_role" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_paiement_mode" edge="1" parent="1" source="cls_paiement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;startArrow=none;dashed=1;fontSize=10;" target="cls_modepaiement" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_resa_statut" edge="1" parent="1" source="cls_reservation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;startArrow=none;dashed=1;fontSize=10;" target="cls_statutresa" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

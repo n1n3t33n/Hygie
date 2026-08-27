@@ -1,0 +1,74 @@
+<mxGraphModel dx="1402" dy="911" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1560" pageHeight="840" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="flutter" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«component»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;App Mobile Flutter&lt;/div&gt;" vertex="1">
+      <mxGeometry height="60" width="260" x="620" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="grp_api" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;fontStyle=1;fillColor=none;strokeColor=#666666;dashed=1;spacingLeft=8;spacingTop=6;" value="API Django REST Framework (DRF)" vertex="1">
+      <mxGeometry height="260" width="1400" x="80" y="170" as="geometry" />
+    </mxCell>
+    <mxCell id="app_comptes" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«component» app Django&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;comptes (Client, Vehicule, Zone, Agent)&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="240" x="120" y="230" as="geometry" />
+    </mxCell>
+    <mxCell id="app_reservations" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«component» app Django&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;reservations (Reservation, Abonnement)&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="240" x="400" y="230" as="geometry" />
+    </mxCell>
+    <mxCell id="app_paiements" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«component» app Django&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;paiements (Paiement)&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="240" x="680" y="230" as="geometry" />
+    </mxCell>
+    <mxCell id="app_missions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«component» app Django&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;missions (Tournee, Mission)&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="240" x="920" y="230" as="geometry" />
+    </mxCell>
+    <mxCell id="app_evaluations" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«component» app Django&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;evaluations (Avis, Signalement)&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="240" x="1180" y="230" as="geometry" />
+    </mxCell>
+    <mxCell id="jwt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«sécurité»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;JWT Auth&lt;/div&gt;" vertex="1">
+      <mxGeometry height="60" width="200" x="120" y="570" as="geometry" />
+    </mxCell>
+    <mxCell id="swagger" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«documentation»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Swagger / Redoc (drf-spectacular)&lt;/div&gt;" vertex="1">
+      <mxGeometry height="60" width="240" x="640" y="570" as="geometry" />
+    </mxCell>
+    <mxCell id="postgres" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«base de données»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;PostgreSQL 16&lt;/div&gt;" vertex="1">
+      <mxGeometry height="60" width="240" x="640" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="odoo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#f5f5f5;strokeColor=#999999;dashed=1;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«futur — différé»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Odoo&lt;/div&gt;" vertex="1">
+      <mxGeometry height="60" width="200" x="1180" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="link_1" edge="1" parent="1" source="flutter" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="grp_api" value="«use» HTTP/REST (JSON, JWT)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="link_2" edge="1" parent="1" source="app_comptes" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="postgres" value="«use» ORM">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="link_3" edge="1" parent="1" source="app_reservations" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="postgres" value="«use» ORM">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="link_4" edge="1" parent="1" source="app_paiements" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="postgres" value="«use» ORM">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="link_5" edge="1" parent="1" source="app_missions" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="postgres" value="«use» ORM">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="link_6" edge="1" parent="1" source="app_evaluations" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="postgres" value="«use» ORM">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="link_7" edge="1" parent="1" source="jwt" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="app_comptes" value="authentifie">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="link_8" edge="1" parent="1" source="grp_api" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="swagger" value="«génère» doc API">
+      <mxGeometry relative="1" x="-0.098" y="-47" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_9" edge="1" parent="1" source="grp_api" style="html=1;endArrow=open;startArrow=none;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;dashed=1;" target="odoo" value="«futur» (voir 08 Architecture)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="note_10" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=10;fillColor=#f5f5f5;strokeColor=#666666;size=14;" value="&lt;b&gt;Règle d&#39;architecture (09 Backend Django)&lt;/b&gt; : aucune logique métier dans les views. Chaque app suit le même flux interne : urls.py → views/ → serializers/ → models/ (ORM) ; le calcul métier va dans services/." vertex="1">
+      <mxGeometry height="90" width="480" x="80" y="460" as="geometry" />
+    </mxCell>
+    <mxCell id="note_11" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=10;fillColor=#f5f5f5;strokeColor=#666666;size=14;" value="&lt;b&gt;Odoo différé&lt;/b&gt; (08 Architecture) : au lancement, Django + PostgreSQL suffisent pour le MVP. Le chemin Flutter → Django → Odoo → PostgreSQL n&#39;est pas actif — ajouté quand l&#39;équipe et les stocks grandiront." vertex="1">
+      <mxGeometry height="90" width="460" x="1020" y="590" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

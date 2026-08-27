@@ -1,0 +1,155 @@
+<mxGraphModel dx="2203" dy="1431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="1600" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="systeme" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value=": Système" vertex="1">
+      <mxGeometry height="60" width="180" x="610" y="640" as="geometry" />
+    </mxCell>
+    <mxCell id="client_act" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Client&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="80" y="460" as="geometry" />
+    </mxCell>
+    <mxCell id="agent_act" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Agent [laveur / chef_equipe]&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="200" x="80" y="650" as="geometry" />
+    </mxCell>
+    <mxCell id="admin_act" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:9px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Administrateur&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="80" y="840" as="geometry" />
+    </mxCell>
+    <mxCell id="client_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Client&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="756.9726150268671" y="34.41919313243102" as="geometry" />
+    </mxCell>
+    <mxCell id="vehicule_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Vehicule&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="979.1930749739295" y="96.44768575047226" as="geometry" />
+    </mxCell>
+    <mxCell id="zone_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Zone&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="1167.5865982640034" y="210.86524438435555" as="geometry" />
+    </mxCell>
+    <mxCell id="abonnement_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Abonnement&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="1304.1608066457934" y="366.7445082757135" as="geometry" />
+    </mxCell>
+    <mxCell id="reservation_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Reservation&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="1375.8722856023749" y="549.198348459139" as="geometry" />
+    </mxCell>
+    <mxCell id="paiement_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Paiement&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="1375.8722856023749" y="740.801651540861" as="geometry" />
+    </mxCell>
+    <mxCell id="tournee_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Tournee&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="1304.1608066457934" y="923.2554917242866" as="geometry" />
+    </mxCell>
+    <mxCell id="mission_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Mission&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="1167.5865982640034" y="1079.1347556156445" as="geometry" />
+    </mxCell>
+    <mxCell id="avis_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Avis&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="979.1930749739295" y="1193.5523142495279" as="geometry" />
+    </mxCell>
+    <mxCell id="signalement_obj" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Signalement&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="150" x="756.9726150268671" y="1255.580806867569" as="geometry" />
+    </mxCell>
+    <mxCell id="link_1" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="client_act" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_2" connectable="0" parent="link_1" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="1.1 sInscrire(nom, prenom, telephone, zoneId, pointEauDisponible)&lt;br&gt;1.2 ajouterVehicule(immatriculation, typeVehicule)&lt;br&gt;2.1 reserverLavage(vehiculeId?, creneau, dateReservation)&lt;br&gt;3.1 sAbonner(frequence, dateDebut)&lt;br&gt;3.2 reserverLavage(abonnementId, creneau, dateReservation)&lt;br&gt;4.1 payer(reservationId, montantAcompte, modePaiement)&lt;br&gt;4.2 payer(reservationId, montantSolde, modePaiement)&lt;br&gt;6.1 noterPrestation(missionId, note, commentaire)&lt;br&gt;6.2 signalerProbleme(missionId, description)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_3" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="agent_act" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_4" connectable="0" parent="link_3" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="5.1 creerTournee(dateTournee)  {role=chef_equipe}&lt;br&gt;5.2 affecterAgent(tourneeId, agentId, missionIds[])  {role=chef_equipe}&lt;br&gt;5.3 consulterPlanning()&lt;br&gt;5.4 demarrerMission(missionId, photoAvant)&lt;br&gt;5.5 terminerMission(missionId, photoApres)&lt;br&gt;6.3 signalerAnomalie(missionId, description)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_5" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="admin_act" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_6" connectable="0" parent="link_5" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="7.1 gererZones(zoneId?, typeZone, nom)&lt;br&gt;7.2 gererUtilisateurs(clientId, action)&lt;br&gt;7.3 consulterStatistiquesGlobales()&lt;br&gt;7.4 gererTarifs(...)  — voir note : pas d&#39;entité Tarif" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_7" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="client_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_8" connectable="0" parent="link_7" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="1.1.1 create(nom, prenom, telephone, pointEauDisponible)&lt;br&gt;7.2.1 update(statut)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_9" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="vehicule_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_10" connectable="0" parent="link_9" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="1.2.1 create(immatriculation, typeVehicule, idClient)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_11" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="zone_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_12" connectable="0" parent="link_11" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="7.1.1 create/update(nom, typeZone)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_13" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="abonnement_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_14" connectable="0" parent="link_13" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="3.1.1 create(frequence, dateDebut, idClient)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_15" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="reservation_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_16" connectable="0" parent="link_15" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="2.1.1 create(dateReservation, creneau, statut=en_attente, vehiculeId?)&lt;br&gt;3.2.1 create(..., idAbonnement)&lt;br&gt;4.1.2 statut = confirmee" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_17" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="paiement_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_18" connectable="0" parent="link_17" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="4.1.1 create(montant=acompte, modePaiement, reservationId)&lt;br&gt;4.2.1 create(montant=solde, modePaiement, reservationId)  — 2e instance" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_19" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="tournee_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_20" connectable="0" parent="link_19" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="5.1.1 create(dateTournee, idAgentCreateur)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_21" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="mission_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_22" connectable="0" parent="link_21" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="5.2.1 create(idReservation, idTournee)&lt;br&gt;5.4.1 demarrer()&lt;br&gt;5.5.1 terminer()" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_23" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="avis_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_24" connectable="0" parent="link_23" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="6.1.1 create(note, commentaire, idMission)" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="link_25" edge="1" parent="1" source="systeme" style="html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#666666;" target="signalement_obj" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linklbl_26" connectable="0" parent="link_25" style="html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;whiteSpace=wrap;" value="6.2.1 create(typeSignalement=client, description, idMission)&lt;br&gt;6.3.1 create(typeSignalement=agent, description, idMission)  — 2e instance" vertex="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="note_27" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=10;fillColor=#f5f5f5;strokeColor=#666666;size=14;" value="&lt;b&gt;Portée&lt;/b&gt; : diagramme condensé aux messages structurants (créations, changements d&#39;état). Les retours, auto-vérifications et branches de rejet (RG2, RG4, RG6, RG7, RG9, RG10) restent documentés dans les 7 diagrammes de séquence P1-P7 — non dupliqués ici pour rester lisible.&lt;br&gt;&lt;br&gt;Numérotation Pn.x = process MCT n, message x (traçable vers les séquences). Pn.x.1 = message déclenché en cascade vers l&#39;objet métier." vertex="1">
+      <mxGeometry height="150" width="420" x="80" y="1010" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

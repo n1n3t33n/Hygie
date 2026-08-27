@@ -1,0 +1,201 @@
+<mxGraphModel dx="1928" dy="1253" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1360" pageHeight="1300" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="chef" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Agent [role=chef_equipe]&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="200" x="40" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="systeme" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«contrôle»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;: Système&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="320" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="obj_tournee" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Tournee&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="580" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="obj_mission" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Mission&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="820" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="laveur" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Agent [role=agent_laveur]&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="200" x="1060" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="msg_1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1: creerTournee(dateTournee)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="140" y="130" as="sourcePoint" />
+        <mxPoint x="400" y="130" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_2" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="2: create(dateTournee, idAgentCreateur)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="180" as="sourcePoint" />
+        <mxPoint x="660" y="180" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_3" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="3: idTournee">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="660" y="230" as="sourcePoint" />
+        <mxPoint x="400" y="230" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_4" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="4: tournée créée">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="280" as="sourcePoint" />
+        <mxPoint x="140" y="280" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="5: affecterAgent(tourneeId, agentId, missionIds[])  {sync ET : réservations groupées + payées}">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="140" y="340" as="sourcePoint" />
+        <mxPoint x="400" y="340" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_6" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="6: create(idReservation, idTournee)  — pour chaque réservation confirmée+payée">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="390" as="sourcePoint" />
+        <mxPoint x="900" y="390" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_7" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="7: idMission">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" y="440" as="sourcePoint" />
+        <mxPoint x="400" y="440" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_8" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="8: tournée planifiée">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="490" as="sourcePoint" />
+        <mxPoint x="140" y="490" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_9" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="9: consulterPlanning()">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1160" y="550" as="sourcePoint" />
+        <mxPoint x="400" y="550" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_10" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="10: liste des missions du jour">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="600" as="sourcePoint" />
+        <mxPoint x="1160" y="600" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_11" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="11: demarrerMission(missionId, photoAvant)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1160" y="660" as="sourcePoint" />
+        <mxPoint x="400" y="660" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_12" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="12: demarrer()">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="710" as="sourcePoint" />
+        <mxPoint x="900" y="710" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="frame_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=#666666;dashed=1;fontSize=10;spacingLeft=6;spacingTop=4;" value="alt" vertex="1">
+      <mxGeometry height="155" width="1240" x="20" y="745" as="geometry" />
+    </mxCell>
+    <mxCell id="guard_14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[photoAvant fournie (RG2)]" vertex="1">
+      <mxGeometry height="16" width="1200" x="50" y="761" as="geometry" />
+    </mxCell>
+    <mxCell id="div_15" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#666666;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="20" y="830" as="sourcePoint" />
+        <mxPoint x="1260" y="830" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="guard_16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[photo avant manquante (RG2)]" vertex="1">
+      <mxGeometry height="16" width="1220" x="30" y="834" as="geometry" />
+    </mxCell>
+    <mxCell id="msg_17" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="13: demarreeLe = maintenant">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" y="770" as="sourcePoint" />
+        <mxPoint x="400" y="770" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_18" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="14: confirmation démarrage">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="805" as="sourcePoint" />
+        <mxPoint x="1160" y="805" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_19" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="15: rejet (photo avant obligatoire)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="860" as="sourcePoint" />
+        <mxPoint x="1160" y="860" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_20" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="16: terminerMission(missionId, photoApres)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1160" y="950" as="sourcePoint" />
+        <mxPoint x="400" y="950" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_21" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="17: terminer()">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="1000" as="sourcePoint" />
+        <mxPoint x="900" y="1000" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="frame_22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=#666666;dashed=1;fontSize=10;spacingLeft=6;spacingTop=4;" value="alt" vertex="1">
+      <mxGeometry height="155" width="1240" x="20" y="1035" as="geometry" />
+    </mxCell>
+    <mxCell id="guard_23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[demarreeLe ≠ null et photoApres fournie (RG2/RG7)]" vertex="1">
+      <mxGeometry height="16" width="1200" x="50" y="1051" as="geometry" />
+    </mxCell>
+    <mxCell id="div_24" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#666666;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="20" y="1120" as="sourcePoint" />
+        <mxPoint x="1260" y="1120" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="guard_25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[précondition non remplie (RG7)]" vertex="1">
+      <mxGeometry height="16" width="1220" x="30" y="1124" as="geometry" />
+    </mxCell>
+    <mxCell id="msg_26" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="18: termineeLe = maintenant">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" y="1060" as="sourcePoint" />
+        <mxPoint x="400" y="1060" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_27" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="19: confirmation fin de mission  → déclenche P6">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="1095" as="sourcePoint" />
+        <mxPoint x="1160" y="1095" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_28" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="20: rejet (mission non démarrée ou photo manquante)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="1150" as="sourcePoint" />
+        <mxPoint x="1160" y="1150" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_chef" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="140" y="90" as="sourcePoint" />
+        <mxPoint x="140" y="1240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_systeme" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="90" as="sourcePoint" />
+        <mxPoint x="400" y="1240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_obj_tournee" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="660" y="90" as="sourcePoint" />
+        <mxPoint x="660" y="1240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_obj_mission" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" y="90" as="sourcePoint" />
+        <mxPoint x="900" y="1240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_laveur" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1160" y="90" as="sourcePoint" />
+        <mxPoint x="1160" y="1240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>

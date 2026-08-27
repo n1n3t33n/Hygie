@@ -1,0 +1,75 @@
+<mxGraphModel dx="1542" dy="1002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1520" pageHeight="800" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="mobile" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="mobile (Flutter)" vertex="1">
+      <mxGeometry height="80" width="220" x="60" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="grp_backend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;fontStyle=1;fillColor=none;strokeColor=#666666;dashed=1;spacingLeft=8;spacingTop=6;" value="backend (projet Django)" vertex="1">
+      <mxGeometry height="380" width="1080" x="380" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="comptes" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="comptes (Client, Vehicule, Zone, Agent)" vertex="1">
+      <mxGeometry height="80" width="240" x="420" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="reservations" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="reservations (Reservation, Abonnement)" vertex="1">
+      <mxGeometry height="80" width="240" x="720" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="paiements" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="paiements (Paiement)" vertex="1">
+      <mxGeometry height="80" width="200" x="1020" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="missions" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="missions (Tournee, Mission)" vertex="1">
+      <mxGeometry height="80" width="240" x="570" y="260" as="geometry" />
+    </mxCell>
+    <mxCell id="evaluations" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="evaluations (Avis, Signalement)" vertex="1">
+      <mxGeometry height="80" width="240" x="870" y="260" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_1" edge="1" parent="1" source="mobile" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="grp_backend" value="«use» API REST">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_2" edge="1" parent="1" source="reservations" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="comptes" value="«import» (Vehicule, Client)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_3" edge="1" parent="1" source="paiements" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="reservations" value="«import» (Reservation)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_4" edge="1" parent="1" source="missions" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="comptes" value="«import» (Agent)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_5" edge="1" parent="1" source="missions" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="reservations" value="«import» (Reservation)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_6" edge="1" parent="1" source="evaluations" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="missions" value="«import» (Mission)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="grp_zoom" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;fontStyle=1;fillColor=none;strokeColor=#666666;dashed=1;spacingLeft=8;spacingTop=6;" value="Zoom sur reservations/ (structure interne — identique pour les 4 autres apps)" vertex="1">
+      <mxGeometry height="300" width="900" x="60" y="460" as="geometry" />
+    </mxCell>
+    <mxCell id="resa_views" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="views/" vertex="1">
+      <mxGeometry height="60" width="180" x="100" y="520" as="geometry" />
+    </mxCell>
+    <mxCell id="resa_serializers" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="serializers/" vertex="1">
+      <mxGeometry height="60" width="180" x="340" y="520" as="geometry" />
+    </mxCell>
+    <mxCell id="resa_services" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="services/" vertex="1">
+      <mxGeometry height="60" width="180" x="100" y="630" as="geometry" />
+    </mxCell>
+    <mxCell id="resa_models" parent="1" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="models/" vertex="1">
+      <mxGeometry height="60" width="180" x="340" y="630" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_7" edge="1" parent="1" source="resa_views" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="resa_serializers" value="«import»">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_8" edge="1" parent="1" source="resa_views" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="resa_services" value="«import»">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_9" edge="1" parent="1" source="resa_services" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="resa_models" value="«import»">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="dep_10" edge="1" parent="1" source="resa_serializers" style="html=1;endArrow=open;startArrow=none;dashed=1;strokeWidth=1;fontSize=9;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="resa_models" value="«import»">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="note_11" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=10;fillColor=#f5f5f5;strokeColor=#666666;size=14;" value="&lt;b&gt;Règle (09 Backend Django)&lt;/b&gt; : aucune logique métier dans les views — elles orchestrent serializers/ (validation/sérialisation) et services/ (calcul métier), qui accèdent seuls aux models/ (ORM).&lt;br&gt;&lt;br&gt;&lt;b&gt;Portée&lt;/b&gt; : ce diagramme organise le code (dépendances d&#39;import), à ne pas confondre avec le diagramme de composants (unités déployables et interfaces runtime, déjà validé).&lt;br&gt;&lt;br&gt;Les dépendances entre apps (comptes/reservations/paiements/missions/evaluations) sont déduites des associations déjà validées dans le diagramme de classes v2 — aucune n&#39;est inventée." vertex="1">
+      <mxGeometry height="260" width="460" x="1020" y="460" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

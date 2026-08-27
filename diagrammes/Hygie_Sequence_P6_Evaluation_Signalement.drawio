@@ -1,0 +1,168 @@
+<mxGraphModel dx="1542" dy="1002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1060" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="client" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Client&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="40" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="systeme" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«contrôle»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;: Système&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="300" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="obj_mission" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Mission&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="560" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="obj_avis" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Avis&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="800" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="obj_signalement" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;u&gt;: Signalement&lt;/u&gt;" vertex="1">
+      <mxGeometry height="50" width="160" x="1040" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="laveur" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;font-style:italic;font-size:10px;&quot;&gt;«acteur»&lt;/div&gt;&lt;div style=&quot;font-weight:bold;&quot;&gt;Agent [role=agent_laveur]&lt;/div&gt;" vertex="1">
+      <mxGeometry height="50" width="200" x="1300" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="msg_1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="1: noterPrestation(missionId, note, commentaire)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="120" y="130" as="sourcePoint" />
+        <mxPoint x="380" y="130" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_2" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="2: vérifier termineeLe">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="180" as="sourcePoint" />
+        <mxPoint x="640" y="180" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="frame_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=#666666;dashed=1;fontSize=10;spacingLeft=6;spacingTop=4;" value="alt" vertex="1">
+      <mxGeometry height="225" width="1480" x="20" y="215" as="geometry" />
+    </mxCell>
+    <mxCell id="guard_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[termineeLe ≠ null (RG9)]" vertex="1">
+      <mxGeometry height="16" width="1440" x="50" y="231" as="geometry" />
+    </mxCell>
+    <mxCell id="div_5" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#666666;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="20" y="375" as="sourcePoint" />
+        <mxPoint x="1500" y="375" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="guard_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=none;strokeColor=none;fontSize=10;fontStyle=2;" value="[mission non terminée (RG9)]" vertex="1">
+      <mxGeometry height="16" width="1460" x="30" y="379" as="geometry" />
+    </mxCell>
+    <mxCell id="msg_7" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="3: termineeLe confirmé">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="640" y="245" as="sourcePoint" />
+        <mxPoint x="380" y="245" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_8" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="4: create(note, commentaire, idMission)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="280" as="sourcePoint" />
+        <mxPoint x="880" y="280" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_9" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="5: idAvis">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="880" y="315" as="sourcePoint" />
+        <mxPoint x="380" y="315" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_10" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="6: avis enregistré">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="350" as="sourcePoint" />
+        <mxPoint x="120" y="350" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_11" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="7: rejet (mission non terminée)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="405" as="sourcePoint" />
+        <mxPoint x="120" y="405" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_12" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="8: signalerProbleme(missionId, description)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="120" y="480" as="sourcePoint" />
+        <mxPoint x="380" y="480" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_13" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="9: create(typeSignalement=client, description, idMission)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="530" as="sourcePoint" />
+        <mxPoint x="1120" y="530" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_14" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="10: idSignalement">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1120" y="580" as="sourcePoint" />
+        <mxPoint x="380" y="580" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_15" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="11: signalement enregistré">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="630" as="sourcePoint" />
+        <mxPoint x="120" y="630" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_16" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="12: signalerAnomalie(missionId, description)">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1400" y="690" as="sourcePoint" />
+        <mxPoint x="380" y="690" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_17" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="13: create(typeSignalement=agent, description, idMission)  — 2e instance">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="740" as="sourcePoint" />
+        <mxPoint x="1120" y="740" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_18" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="14: idSignalement">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1120" y="790" as="sourcePoint" />
+        <mxPoint x="380" y="790" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg_19" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;startArrow=none;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;" value="15: signalement enregistré">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="840" as="sourcePoint" />
+        <mxPoint x="1400" y="840" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="note_20" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=11;fillColor=#f5f5f5;strokeColor=#666666;size=16;" value="typeSignalement {client, agent} unifie les deux origines dans une classe unique Signalement (cohérent avec 06 MERISE / diagramme de classes v2)." vertex="1">
+      <mxGeometry height="70" width="700" x="40" y="910" as="geometry" />
+    </mxCell>
+    <mxCell id="lifeline_client" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="120" y="90" as="sourcePoint" />
+        <mxPoint x="120" y="1000" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_systeme" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="90" as="sourcePoint" />
+        <mxPoint x="380" y="1000" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_obj_mission" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="640" y="90" as="sourcePoint" />
+        <mxPoint x="640" y="1000" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_obj_avis" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="880" y="90" as="sourcePoint" />
+        <mxPoint x="880" y="1000" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_obj_signalement" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1120" y="90" as="sourcePoint" />
+        <mxPoint x="1120" y="1000" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lifeline_laveur" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1400" y="90" as="sourcePoint" />
+        <mxPoint x="1400" y="1000" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>

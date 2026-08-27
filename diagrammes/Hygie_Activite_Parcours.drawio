@@ -1,0 +1,225 @@
+<mxGraphModel dx="3855" dy="2505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="2448" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="lanehdr_0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fillColor=#f5f5f5;strokeColor=#666666;" value="Client" vertex="1">
+      <mxGeometry height="40" width="300" as="geometry" />
+    </mxCell>
+    <mxCell id="lanehdr_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fillColor=#f5f5f5;strokeColor=#666666;" value="Système" vertex="1">
+      <mxGeometry height="40" width="300" x="300" as="geometry" />
+    </mxCell>
+    <mxCell id="divider_1" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="300" as="sourcePoint" />
+        <mxPoint x="300" y="2448" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lanehdr_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fillColor=#f5f5f5;strokeColor=#666666;" value="ChefEquipe" vertex="1">
+      <mxGeometry height="40" width="300" x="600" as="geometry" />
+    </mxCell>
+    <mxCell id="divider_2" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="600" as="sourcePoint" />
+        <mxPoint x="600" y="2448" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lanehdr_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fillColor=#f5f5f5;strokeColor=#666666;" value="AgentLaveur" vertex="1">
+      <mxGeometry height="40" width="300" x="900" as="geometry" />
+    </mxCell>
+    <mxCell id="divider_3" edge="1" parent="1" style="html=1;endArrow=none;startArrow=none;dashed=1;strokeColor=#999999;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="900" as="sourcePoint" />
+        <mxPoint x="900" y="2448" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+      <mxGeometry height="30" width="30" x="135" y="60" as="geometry" />
+    </mxCell>
+    <mxCell id="act_reserver" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Réserver un lavage (créneau + véhicule optionnel)" vertex="1">
+      <mxGeometry height="60" width="220" x="40" y="110" as="geometry" />
+    </mxCell>
+    <mxCell id="act_verif_creneau" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Vérifier créneau (RG3)" vertex="1">
+      <mxGeometry height="50" width="220" x="340" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="dec_creneau" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Créneau libre ? (RG6)" vertex="1">
+      <mxGeometry height="70" width="180" x="360" y="280" as="geometry" />
+    </mxCell>
+    <mxCell id="act_creer_resa" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Créer réservation (statut = en_attente)" vertex="1">
+      <mxGeometry height="60" width="220" x="340" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="act_payer" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Payer l&#39;acompte (RG10)" vertex="1">
+      <mxGeometry height="50" width="220" x="40" y="480" as="geometry" />
+    </mxCell>
+    <mxCell id="act_verif_paiement" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Vérifier mode de paiement" vertex="1">
+      <mxGeometry height="50" width="220" x="340" y="560" as="geometry" />
+    </mxCell>
+    <mxCell id="dec_paiement" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Mode de paiement valide ? (RG10)" vertex="1">
+      <mxGeometry height="70" width="180" x="360" y="640" as="geometry" />
+    </mxCell>
+    <mxCell id="act_enregistrer_paiement" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Enregistrer paiement + statut réservation = confirmee" vertex="1">
+      <mxGeometry height="60" width="220" x="340" y="760" as="geometry" />
+    </mxCell>
+    <mxCell id="note_1" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=10;fillColor=#f5f5f5;strokeColor=#666666;size=14;" value="Le chef d&#39;équipe regroupe plusieurs réservations confirmées + payées de la même zone/créneau avant de créer une tournée." vertex="1">
+      <mxGeometry height="90" width="260" x="630" y="760" as="geometry" />
+    </mxCell>
+    <mxCell id="act_creer_tournee" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Créer une tournée" vertex="1">
+      <mxGeometry height="50" width="220" x="640" y="860" as="geometry" />
+    </mxCell>
+    <mxCell id="act_affecter_agent" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Affecter un agent à la mission" vertex="1">
+      <mxGeometry height="50" width="220" x="640" y="940" as="geometry" />
+    </mxCell>
+    <mxCell id="act_consulter_planning" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#cce5ff;strokeColor=#6c8ebf;" value="Consulter le planning" vertex="1">
+      <mxGeometry height="50" width="220" x="940" y="1020" as="geometry" />
+    </mxCell>
+    <mxCell id="act_photo_avant" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#cce5ff;strokeColor=#6c8ebf;" value="Se rendre sur place, prendre photo avant" vertex="1">
+      <mxGeometry height="60" width="220" x="940" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="act_demarrer" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#cce5ff;strokeColor=#6c8ebf;" value="Démarrer la mission" vertex="1">
+      <mxGeometry height="50" width="220" x="940" y="1190" as="geometry" />
+    </mxCell>
+    <mxCell id="dec_photo_avant" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Photo avant fournie ? (RG2)" vertex="1">
+      <mxGeometry height="70" width="180" x="960" y="1270" as="geometry" />
+    </mxCell>
+    <mxCell id="act_laver" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#cce5ff;strokeColor=#6c8ebf;" value="Réaliser le lavage" vertex="1">
+      <mxGeometry height="50" width="220" x="940" y="1390" as="geometry" />
+    </mxCell>
+    <mxCell id="act_photo_apres" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#cce5ff;strokeColor=#6c8ebf;" value="Prendre photo après" vertex="1">
+      <mxGeometry height="50" width="220" x="940" y="1470" as="geometry" />
+    </mxCell>
+    <mxCell id="act_terminer" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#cce5ff;strokeColor=#6c8ebf;" value="Terminer la mission" vertex="1">
+      <mxGeometry height="50" width="220" x="940" y="1550" as="geometry" />
+    </mxCell>
+    <mxCell id="dec_terminer" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Démarrée + photo après fournie ? (RG2/RG7)" vertex="1">
+      <mxGeometry height="80" width="180" x="960" y="1630" as="geometry" />
+    </mxCell>
+    <mxCell id="act_mission_terminee" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Mission terminée (déclenche P6)" vertex="1">
+      <mxGeometry height="60" width="220" x="340" y="1750" as="geometry" />
+    </mxCell>
+    <mxCell id="dec_solde" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Solde restant à payer ?" vertex="1">
+      <mxGeometry height="70" width="180" x="360" y="1850" as="geometry" />
+    </mxCell>
+    <mxCell id="act_payer_solde" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Payer le solde" vertex="1">
+      <mxGeometry height="50" width="220" x="40" y="1960" as="geometry" />
+    </mxCell>
+    <mxCell id="dec_post_mission" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Action de suivi ? (mission déjà terminée : RG9 respectée)" vertex="1">
+      <mxGeometry height="90" width="180" x="360" y="2050" as="geometry" />
+    </mxCell>
+    <mxCell id="act_noter" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Noter la prestation" vertex="1">
+      <mxGeometry height="50" width="220" x="40" y="2200" as="geometry" />
+    </mxCell>
+    <mxCell id="act_signal_client" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Signaler un problème" vertex="1">
+      <mxGeometry height="50" width="220" x="40" y="2280" as="geometry" />
+    </mxCell>
+    <mxCell id="act_signal_agent" parent="1" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fontSize=11;fillColor=#cce5ff;strokeColor=#6c8ebf;" value="Signaler une anomalie" vertex="1">
+      <mxGeometry height="50" width="220" x="940" y="2200" as="geometry" />
+    </mxCell>
+    <mxCell id="end_outer" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+      <mxGeometry height="38" width="38" x="431" y="2376" as="geometry" />
+    </mxCell>
+    <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+      <mxGeometry height="30" width="30" x="435" y="2380" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_2" edge="1" parent="1" source="start" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_reserver" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_3" edge="1" parent="1" source="act_reserver" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_verif_creneau" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_4" edge="1" parent="1" source="act_verif_creneau" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="dec_creneau" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_5" edge="1" parent="1" source="dec_creneau" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act_reserver" value="non">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_6" edge="1" parent="1" source="dec_creneau" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_creer_resa" value="oui">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_7" edge="1" parent="1" source="act_creer_resa" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_payer" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_8" edge="1" parent="1" source="act_payer" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_verif_paiement" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_9" edge="1" parent="1" source="act_verif_paiement" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="dec_paiement" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_10" edge="1" parent="1" source="dec_paiement" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act_payer" value="non">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_11" edge="1" parent="1" source="dec_paiement" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_enregistrer_paiement" value="oui">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_12" edge="1" parent="1" source="act_enregistrer_paiement" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_creer_tournee" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_13" edge="1" parent="1" source="act_creer_tournee" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_affecter_agent" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_14" edge="1" parent="1" source="act_affecter_agent" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_consulter_planning" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_15" edge="1" parent="1" source="act_consulter_planning" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_photo_avant" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_16" edge="1" parent="1" source="act_photo_avant" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_demarrer" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_17" edge="1" parent="1" source="act_demarrer" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="dec_photo_avant" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_18" edge="1" parent="1" source="dec_photo_avant" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act_photo_avant" value="non">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_19" edge="1" parent="1" source="dec_photo_avant" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_laver" value="oui">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_20" edge="1" parent="1" source="act_laver" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_photo_apres" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_21" edge="1" parent="1" source="act_photo_apres" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_terminer" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_22" edge="1" parent="1" source="act_terminer" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="dec_terminer" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_23" edge="1" parent="1" source="dec_terminer" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act_photo_apres" value="non">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_24" edge="1" parent="1" source="dec_terminer" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_mission_terminee" value="oui">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_25" edge="1" parent="1" source="act_mission_terminee" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="dec_solde" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_26" edge="1" parent="1" source="dec_solde" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_payer_solde" value="oui">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_27" edge="1" parent="1" source="dec_solde" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="dec_post_mission" value="non">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_28" edge="1" parent="1" source="act_payer_solde" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="dec_post_mission" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_29" edge="1" parent="1" source="dec_post_mission" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="end" value="aucune">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_30" edge="1" parent="1" source="dec_post_mission" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_noter" value="client note">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_31" edge="1" parent="1" source="dec_post_mission" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_signal_client" value="client signale">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_32" edge="1" parent="1" source="dec_post_mission" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="act_signal_agent" value="agent signale">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_33" edge="1" parent="1" source="act_noter" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="end" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_34" edge="1" parent="1" source="act_signal_client" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="end" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow_35" edge="1" parent="1" source="act_signal_agent" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="end" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

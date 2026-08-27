@@ -1,0 +1,49 @@
+<mxGraphModel dx="1101" dy="716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="798" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+      <mxGeometry height="30" width="30" x="400" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="planifiee" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;planifiee&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;div style=&quot;font-weight:normal;font-size:9px;font-style:italic;&quot;&gt;dérivé : demarreeLe = null ET termineeLe = null&lt;/div&gt;" vertex="1">
+      <mxGeometry height="70" width="220" x="280" y="130" as="geometry" />
+    </mxCell>
+    <mxCell id="en_cours" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;en_cours&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;div style=&quot;font-weight:normal;font-size:9px;font-style:italic;&quot;&gt;dérivé : demarreeLe ≠ null ET termineeLe = null&lt;/div&gt;" vertex="1">
+      <mxGeometry height="70" width="220" x="280" y="320" as="geometry" />
+    </mxCell>
+    <mxCell id="terminee" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div style=&quot;text-align:center;font-weight:bold;&quot;&gt;terminee&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;div style=&quot;font-weight:normal;font-size:9px;font-style:italic;&quot;&gt;dérivé : demarreeLe ≠ null ET termineeLe ≠ null&lt;/div&gt;" vertex="1">
+      <mxGeometry height="70" width="220" x="280" y="510" as="geometry" />
+    </mxCell>
+    <mxCell id="end_outer" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+      <mxGeometry height="38" width="38" x="396" y="696" as="geometry" />
+    </mxCell>
+    <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+      <mxGeometry height="30" width="30" x="400" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="trans_1" edge="1" parent="1" source="start" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="planifiee" value="create(idReservation, idTournee)  — affecterAgent() (P5)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="trans_2" edge="1" parent="1" source="planifiee" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="en_cours" value="demarrer(photoAvant)  [photoAvant fournie, RG2]">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="selftrans_3" edge="1" parent="1" source="planifiee" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;" target="planifiee" value="demarrer()  [photoAvant manquante, RG2] / rejeté">
+      <mxGeometry relative="1" y="130" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="trans_4" edge="1" parent="1" source="en_cours" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="terminee" value="terminer(photoApres)  [photoApres fournie, RG2 ; demarreeLe≠null, RG7]">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="selftrans_5" edge="1" parent="1" source="en_cours" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;" target="en_cours" value="terminer()  [photoApres manquante ou precondition RG7 non remplie] / rejeté">
+      <mxGeometry relative="1" x="0.3571" y="190" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="trans_6" edge="1" parent="1" source="terminee" style="html=1;endArrow=block;endFill=1;strokeWidth=1;fontSize=10;fontColor=#333333;labelBackgroundColor=#FFFFFF;rounded=0;" target="end" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="note_7" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;spacingRight=8;fontSize=10;fillColor=#f5f5f5;strokeColor=#666666;size=14;" value="&lt;b&gt;États dérivés&lt;/b&gt;, pas un attribut `statut` littéral : Mission n&#39;a pas d&#39;énumération de statut dans le diagramme de classes v2, seulement demarreeLe/termineeLe (TimestampTZ). Pas d&#39;état d&#39;annulation — aucune règle de gestion actuelle ne le prévoit ; à confirmer si nécessaire (ex. agent indisponible)." vertex="1">
+      <mxGeometry height="110" width="340" x="560" y="40" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
