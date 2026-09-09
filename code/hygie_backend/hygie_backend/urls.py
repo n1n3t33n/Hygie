@@ -19,18 +19,32 @@ from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+    TokenVerifyView,
+)
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    #api
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+
+    #apps
     path('api/comptes/', include('apps.comptes.urls')),
     path('api/reservations/', include('apps.reservations.urls')),
     path('api/paiements/', include('apps.paiements.urls')),
     path('api/missions/', include('apps.missions.urls')),
     path('api/evaluations/', include('apps.evaluations.urls')),
+
+    #tokens
+    path('api/auth/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/auth/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/auth/verify/', TokenVerifyView.as_view(), name='token_verify'),
 ]
 
 if settings.DEBUG:

@@ -33,6 +33,7 @@ THIRD_PARTY_APPS = [
     'rest_framework',          # Django REST Framework
     'drf_spectacular',         # Génération Swagger/Redoc
     'corsheaders',             # Autorise les appels cross-origin (Flutter, futur back-office Next.js)
+    'rest_framework_simplejwt.token_blacklist',
 ]
 
 # --- Nos 5 apps métier, regroupées dans le dossier apps/ ---
@@ -111,9 +112,13 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=30),
     'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True,
+    'UPDATE_LAST_LOGIN': True,
+    'TOKEN_OBTAIN_SERIALIZER': 'apps.comptes.serializers.UtilisateurTokenObtainPairSerializer', # est un point d'extension natif de simplejwt : il permet à TokenObtainPairView d'utiliser directement notre serializer personnalisé sans avoir besoin de sous-classer la vue.
+    
 }
 
 SPECTACULAR_SETTINGS = {
