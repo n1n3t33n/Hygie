@@ -125,3 +125,6 @@ SPECTACULAR_SETTINGS = {
 
 # --- CORS (Flutter mobile + futur back-office Next.js) ---
 CORS_ALLOWED_ORIGINS = env.list('CORS_ALLOWED_ORIGINS', default=[])
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
