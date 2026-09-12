@@ -7,9 +7,12 @@ class UtilisateurTokenObtainPairSerializer(TokenObtainPairSerializer):
     pour éviter un appel API supplémentaire côté mobile/back-office
     juste après la connexion.
 
-    Limité pour l'instant aux champs déjà présents sur Utilisateur (AbstractUser).
-    TODO: ajouter role / id_zone / id_agent / id_client une fois le lien
-    OneToOne Utilisateur <-> Client/Agent et le rôle métier confirmés.
+    role : calculé via Utilisateur.get_role() ('client' / 'agent' / 'chef_equipe' /
+    'administrateur' / None), maintenant que le lien OneToOne Utilisateur <->
+    Client/Agent/Administrateur est confirmé.
+
+    TODO: id_zone / id_agent / id_client — décision distincte, non traitée ici
+    (voir remarque de fin de réponse).
     """
 
     @classmethod
@@ -19,4 +22,5 @@ class UtilisateurTokenObtainPairSerializer(TokenObtainPairSerializer):
         token['email'] = user.email
         token['is_staff'] = user.is_staff
         token['is_superuser'] = user.is_superuser
+        token['role'] = user.get_role()
         return token
