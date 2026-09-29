@@ -52,3 +52,16 @@ class CompteMixin(serializers.Serializer):
         data['nom'] = instance.utilisateur.last_name
         data['prenom'] = instance.utilisateur.first_name
         return data
+
+class ProfilDetailMixin(serializers.Serializer):
+    """
+    Champs d'authentification en lecture seule pour les serializers de
+    consultation/modification d'un profil déjà existant (liste, détail,
+    PATCH) — symétrique à CompteMixin, mais on n'autorise pas de changer
+    username/email/nom/prénom via ces vues (hors périmètre de cette étape).
+    """
+    username = serializers.CharField(source='utilisateur.username', read_only=True)
+    email = serializers.EmailField(source='utilisateur.email', read_only=True)
+    nom = serializers.CharField(source='utilisateur.last_name', read_only=True)
+    prenom = serializers.CharField(source='utilisateur.first_name', read_only=True)
+    is_active = serializers.BooleanField(source='utilisateur.is_active', read_only=True)

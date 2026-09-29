@@ -1,4 +1,4 @@
-from rest_framework.permissions import BasePermission
+from rest_framework.permissions import BasePermission, DjangoModelPermissions
 
 
 class IsClient(BasePermission):
@@ -43,29 +43,53 @@ class IsAdministrateur(BasePermission):
         )
 
 
-class PeutGererUtilisateurs(BasePermission):
+class PermissionsModeleComplet(DjangoModelPermissions):
     """
-    Capacité "Gérer les utilisateurs" (07 UML) — ici, création de comptes
-    Agent. Accordée automatiquement à un superuser ; pour un Administrateur
-    limité, doit être explicitement assignée via la permission Django
-    "comptes.add_agent" (générée automatiquement par Django pour le modèle
-    Agent, assignable via un Group).
+    Étend DjangoModelPermissions (natif DRF) pour exiger explicitement
+    "view_<modèle>" en lecture — par défaut, DRF n'exige aucune permission
+    particulière pour GET/HEAD, seulement d'être authentifié. Utilisée sur
+    les vues Agent et Client : le nom du modèle (et donc les permissions
+    add_/change_/delete_/view_) est déduit automatiquement du queryset de
+    la vue, donc une seule classe couvre les deux modèles.
     """
-    message = "Vous n'avez pas la capacité de gérer les utilisateurs."
+    perms_map = {
+        'GET': ['%(app_label)s.view_%(model_name)s'],
+        'OPTIONS': [],
+        'HEAD': ['%(app_label)s.view_%(model_name)s'],
+        'POST': ['%(app_label)s.add_%(model_name)s'],
+        'PUT': ['%(app_label)s.change_%(model_name)s'],
+        'PATCH': ['%(app_label)s.change_%(model_name)s'],
+        'DELETE': ['%(app_label)s.delete_%(model_name)s'],
+    }
+
+
+class PeutModifierModele(BasePermission):
+    """
+    Exige "change_<modèle>" de la vue ciblée, indépendamment du verbe HTTP
+    utilisé — pour des actions comme "désactiver" : sémantiquement une
+    modification, même si elle passe par POST plutôt que PATCH.
+    """
+    message = "Vous n'avez pas la capacité de modifier ce compte."
 
     def has_permission(self, request, view):
-        return bool(
-            request.user and request.user.is_authenticated
-            and request.user.has_perm('comptes.add_agent')
-        )
+        if not (request.user and request.user.is_authenticated):
+            return False
+        queryset = getattr(view, 'queryset', None)
+        if queryset is None:
+            return False
+        modele = queryset.model
+        codename = f'{modele._meta.app_label}.change_{modele._meta.model_name}'
+        return request.user.has_perm(codename)
 
 
 class PeutCreerAdministrateur(BasePermission):
     """
-    Capacité distincte du simple rôle Administrateur : un Administrateur
-    "limité" (créé pour un lavage partenaire) ne l'a pas par défaut.
+    Capacité indivisible pour tout ce qui touche à un compte Administrateur
+    (créer, lister, consulter, désactiver) — un Administrateur "limité" ne
+    l'a pas par défaut. Choix délibéré de ne pas fragmenter cette capacité
+    pour l'instant.
     """
-    message = "Vous n'avez pas la capacité de créer des comptes Administrateur."
+    message = "Vous n'avez pas la capacité de gérer des comptes Administrateur."
 
     def has_permission(self, request, view):
         return bool(
