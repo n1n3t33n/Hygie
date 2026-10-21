@@ -31,6 +31,15 @@ class Vehicule(models.Model):
         db_table = 'vehicule'
         verbose_name = 'Véhicule'
         verbose_name_plural = 'Véhicules'
+        constraints = [
+            # Décision V1 (validée le 18/10/2026) : une même plaque ne peut être enregistrée
+            # qu'une fois PAR CLIENT. Garde-fou en base ; la normalisation (espaces, majuscules)
+            # est faite en amont par services/vehicules.py.
+            models.UniqueConstraint(
+                fields=['client', 'immatriculation'],
+                name='unique_immatriculation_par_client',
+            ),
+        ]
 
     def __str__(self):
         return f"{self.immatriculation} ({self.get_type_vehicule_display()})"
